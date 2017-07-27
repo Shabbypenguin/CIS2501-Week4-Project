@@ -22,7 +22,7 @@ Public Class Form1
             MsgBox("Please select years remaining")
             Exit Sub
         End If
-        CustomDialog.ShowForm("You are going For a " + degreePlan + " degree In " + degreeList.SelectedItem.ToString + " And you have " + yearsRemaining.SelectedItem.ToString + " remaining, keep up the good work!")
+        CustomDialog.ShowForm("You are going For a " + degreePlan + " degree In " + degreeList.SelectedItem.ToString + " and you have " + yearsRemaining.SelectedItem.ToString + " remaining, keep up the good work!")
     End Sub
 
     Private Sub degreeBox1_Click(sender As Object, e As EventArgs) Handles degreeBox1.Click
