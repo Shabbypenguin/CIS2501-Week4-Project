@@ -8,21 +8,24 @@ Public Class Form1
 
     Private Sub startButton_Click(sender As Object, e As EventArgs) Handles startButton.Click
         Dim degreePlan As String = ""
-        If degreeBox1.Checked Then
-            degreePlan = "Associates"
-        ElseIf degreeBox2.Checked Then
-            degreePlan = "Bachelors"
-        ElseIf degreeBox3.Checked Then
-            degreePlan = "Masters"
-        ElseIf degreeBox4.Checked Then
-            degreePlan = "Ph.D"
-        End If
-
         If IsNothing(yearsRemaining.SelectedItem) = True Then
             MsgBox("Please select years remaining")
             Exit Sub
+        Else
+            If degreeBox1.Checked Then
+                degreePlan = "Associates"
+            ElseIf degreeBox2.Checked Then
+                degreePlan = "Bachelors"
+            ElseIf degreeBox3.Checked Then
+                degreePlan = "Masters"
+            ElseIf degreeBox4.Checked Then
+                degreePlan = "Ph.D"
+            ElseIf degreeBox1.CheckState = 0 AndAlso degreeBox2.CheckState = 0 AndAlso degreeBox3.CheckState = 0 AndAlso degreeBox4.CheckState = 0 Then
+                MsgBox("Please select a degree type")
+                Exit Sub
+            End If
+            CustomDialog.ShowForm("You are going For a " + degreePlan + " degree In " + degreeList.SelectedItem.ToString + " and you have " + yearsRemaining.SelectedItem.ToString + " remaining, keep up the good work!")
         End If
-        CustomDialog.ShowForm("You are going For a " + degreePlan + " degree In " + degreeList.SelectedItem.ToString + " and you have " + yearsRemaining.SelectedItem.ToString + " remaining, keep up the good work!")
     End Sub
 
     Private Sub degreeBox1_Click(sender As Object, e As EventArgs) Handles degreeBox1.Click
@@ -33,7 +36,6 @@ Public Class Form1
             degreeBox3.CheckState = CheckState.Unchecked
             degreeBox4.CheckState = CheckState.Unchecked
             Do Until i = 2
-                ' I start a loop to set the number of years remaining for our combo box
                 yearsRemaining.Items.Add(year + i & " years")
                 i += 1
             Loop
@@ -48,7 +50,6 @@ Public Class Form1
             degreeBox3.CheckState = CheckState.Unchecked
             degreeBox4.CheckState = CheckState.Unchecked
             Do Until i = 4
-                ' I start a loop to set the number of years remaining for our combo box
                 yearsRemaining.Items.Add(year + i & " years")
                 i += 1
             Loop
@@ -63,7 +64,6 @@ Public Class Form1
             degreeBox2.CheckState = CheckState.Unchecked
             degreeBox4.CheckState = CheckState.Unchecked
             Do Until i = 7
-                ' I start a loop to set the number of years remaining for our combo box
                 yearsRemaining.Items.Add(year + i & " years")
                 i += 1
             Loop
@@ -78,7 +78,6 @@ Public Class Form1
             degreeBox2.CheckState = CheckState.Unchecked
             degreeBox3.CheckState = CheckState.Unchecked
             Do Until i = 9
-                ' I start a loop to set the number of years remaining for our combo box
                 yearsRemaining.Items.Add(year + i & " years")
                 i += 1
             Loop
