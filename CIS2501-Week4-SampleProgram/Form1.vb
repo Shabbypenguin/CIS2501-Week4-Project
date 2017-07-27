@@ -16,9 +16,7 @@ Public Class Form1
         ElseIf degreeBox4.Checked Then
             degreePlan = "Ph.D"
         End If
-        Dim chosenDegree As String = degreeList.ValueMember
-        MsgBox("YES, continue!!")
-        'MsgBox("test" + chosenDegree + " and you are going for " + degreePlan)
+        MsgBox("You are going for a " + degreePlan + " degree in " + degreeList.SelectedItem.ToString + " and you have " + yearsRemaining.SelectedItem.ToString + " years remaining, keep up the good work!")
 
     End Sub
 

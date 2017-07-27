@@ -27,7 +27,7 @@ Partial Class Form1
         Me.degreeBox4 = New System.Windows.Forms.CheckBox()
         Me.degreeBox3 = New System.Windows.Forms.CheckBox()
         Me.degreeList = New System.Windows.Forms.ListBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.yearsRemaining = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.startButton = New System.Windows.Forms.Button()
@@ -83,14 +83,14 @@ Partial Class Form1
         Me.degreeList.Size = New System.Drawing.Size(138, 69)
         Me.degreeList.TabIndex = 9
         '
-        'ComboBox1
+        'yearsRemaining
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Year", "month", "date"})
-        Me.ComboBox1.Location = New System.Drawing.Point(153, 135)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(138, 21)
-        Me.ComboBox1.TabIndex = 10
+        Me.yearsRemaining.FormattingEnabled = True
+        Me.yearsRemaining.Items.AddRange(New Object() {"Year", "month", "date"})
+        Me.yearsRemaining.Location = New System.Drawing.Point(153, 135)
+        Me.yearsRemaining.Name = "yearsRemaining"
+        Me.yearsRemaining.Size = New System.Drawing.Size(138, 21)
+        Me.yearsRemaining.TabIndex = 10
         '
         'Label1
         '
@@ -137,7 +137,7 @@ Partial Class Form1
         Me.Controls.Add(Me.startButton)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.yearsRemaining)
         Me.Controls.Add(Me.degreeList)
         Me.Controls.Add(Me.degreeBox4)
         Me.Controls.Add(Me.degreeBox3)
@@ -155,7 +155,7 @@ Partial Class Form1
     Friend WithEvents degreeBox4 As CheckBox
     Friend WithEvents degreeBox3 As CheckBox
     Friend WithEvents degreeList As ListBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents yearsRemaining As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents startButton As Button
