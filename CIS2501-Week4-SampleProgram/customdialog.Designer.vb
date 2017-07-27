@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class msgBox
+Partial Class MsgBox
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.

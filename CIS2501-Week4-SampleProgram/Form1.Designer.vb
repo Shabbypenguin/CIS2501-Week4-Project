@@ -26,7 +26,7 @@ Partial Class Form1
         Me.degreeBox2 = New System.Windows.Forms.CheckBox()
         Me.degreeBox4 = New System.Windows.Forms.CheckBox()
         Me.degreeBox3 = New System.Windows.Forms.CheckBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.degreeList = New System.Windows.Forms.ListBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -74,14 +74,14 @@ Partial Class Form1
         Me.degreeBox3.Text = "Masters"
         Me.degreeBox3.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'degreeList
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Aeronautics", "Business", "Communication", "Computing", "Education", "Engineering", "Liberal Arts", "Premedical", "Psycology", "Science"})
-        Me.ListBox1.Location = New System.Drawing.Point(153, 45)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(138, 69)
-        Me.ListBox1.TabIndex = 9
+        Me.degreeList.FormattingEnabled = True
+        Me.degreeList.Items.AddRange(New Object() {"Aeronautics", "Business", "Communication", "Computing", "Education", "Engineering", "Liberal Arts", "Premedical", "Psycology", "Science"})
+        Me.degreeList.Location = New System.Drawing.Point(153, 45)
+        Me.degreeList.Name = "degreeList"
+        Me.degreeList.Size = New System.Drawing.Size(138, 69)
+        Me.degreeList.TabIndex = 9
         '
         'ComboBox1
         '
@@ -138,7 +138,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.degreeList)
         Me.Controls.Add(Me.degreeBox4)
         Me.Controls.Add(Me.degreeBox3)
         Me.Controls.Add(Me.degreeBox2)
@@ -154,7 +154,7 @@ Partial Class Form1
     Friend WithEvents degreeBox2 As CheckBox
     Friend WithEvents degreeBox4 As CheckBox
     Friend WithEvents degreeBox3 As CheckBox
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents degreeList As ListBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label

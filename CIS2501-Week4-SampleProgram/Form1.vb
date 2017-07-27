@@ -1,10 +1,12 @@
-﻿Public Class Form1
+﻿Imports System
+
+Public Class Form1
     Private Sub exitButton_Click(sender As Object, e As EventArgs) Handles exitButton.Click
         Close()
     End Sub
 
     Private Sub startButton_Click(sender As Object, e As EventArgs) Handles startButton.Click
-        Dim degreePlan As String
+        Dim degreePlan As String = ""
         If degreeBox1.Checked Then
             degreePlan = "Associates"
         ElseIf degreeBox2.Checked Then
@@ -14,7 +16,9 @@
         ElseIf degreeBox4.Checked Then
             degreePlan = "Ph.D"
         End If
-
+        Dim chosenDegree As String = degreeList.ValueMember
+        MsgBox("YES, continue!!")
+        'MsgBox("test" + chosenDegree + " and you are going for " + degreePlan)
 
     End Sub
 

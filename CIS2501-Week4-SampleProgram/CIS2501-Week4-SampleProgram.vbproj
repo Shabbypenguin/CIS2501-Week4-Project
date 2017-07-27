@@ -79,10 +79,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="msgBox.Designer.vb">
-      <DependentUpon>msgBox.vb</DependentUpon>
+    <Compile Include="customdialog.Designer.vb">
+      <DependentUpon>customdialog.vb</DependentUpon>
     </Compile>
-    <Compile Include="msgBox.vb">
+    <Compile Include="customdialog.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -105,8 +105,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="msgBox.resx">
-      <DependentUpon>msgBox.vb</DependentUpon>
+    <EmbeddedResource Include="customdialog.resx">
+      <DependentUpon>customdialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
