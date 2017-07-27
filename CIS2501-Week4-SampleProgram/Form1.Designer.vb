@@ -85,8 +85,8 @@ Partial Class Form1
         '
         'yearsRemaining
         '
+        Me.yearsRemaining.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.yearsRemaining.FormattingEnabled = True
-        Me.yearsRemaining.Items.AddRange(New Object() {"Year", "month", "date"})
         Me.yearsRemaining.Location = New System.Drawing.Point(153, 135)
         Me.yearsRemaining.Name = "yearsRemaining"
         Me.yearsRemaining.Size = New System.Drawing.Size(138, 21)
