@@ -16,8 +16,8 @@ Public Class Form1
         ElseIf degreeBox4.Checked Then
             degreePlan = "Ph.D"
         End If
-        MsgBox("You are going for a " + degreePlan + " degree in " + degreeList.SelectedItem.ToString + " and you have " + yearsRemaining.SelectedItem.ToString + " years remaining, keep up the good work!")
-
+        'MsgBox("You are going for a " + degreePlan + " degree in " + degreeList.SelectedItem.ToString + " and you have " + yearsRemaining.SelectedItem.ToString + " years remaining, keep up the good work!")
+        CustomDialog.ShowForm("You are going For a " + degreePlan + " degree In " + degreeList.SelectedItem.ToString + " And you have " + yearsRemaining.SelectedItem.ToString + " years remaining, keep up the good work!")
     End Sub
 
     Private Sub degreeBox1_Click(sender As Object, e As EventArgs) Handles degreeBox1.Click
