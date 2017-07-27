@@ -6,6 +6,10 @@
 
     Public Sub ShowForm(OutputText As String)
         output.Text = OutputText
-        Me.Show()
+        Show()
+    End Sub
+
+    Private Sub confirmationButton_Click(sender As Object, e As EventArgs) Handles confirmationButton.Click
+        Close()
     End Sub
 End Class

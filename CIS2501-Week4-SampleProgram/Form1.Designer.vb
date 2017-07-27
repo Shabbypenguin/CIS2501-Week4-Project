@@ -32,6 +32,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.startButton = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'degreeBox1
@@ -128,11 +129,21 @@ Partial Class Form1
         Me.exitButton.Text = "E&xit"
         Me.exitButton.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(68, 138)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(85, 13)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Years remaining:"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(324, 243)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.exitButton)
         Me.Controls.Add(Me.startButton)
         Me.Controls.Add(Me.Label2)
@@ -143,8 +154,10 @@ Partial Class Form1
         Me.Controls.Add(Me.degreeBox3)
         Me.Controls.Add(Me.degreeBox2)
         Me.Controls.Add(Me.degreeBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Week 4 - CIS2501"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -160,4 +173,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents startButton As Button
     Friend WithEvents exitButton As Button
+    Friend WithEvents Label3 As Label
 End Class

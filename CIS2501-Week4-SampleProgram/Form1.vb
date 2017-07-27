@@ -18,6 +18,10 @@ Public Class Form1
             degreePlan = "Ph.D"
         End If
 
+        If IsNothing(yearsRemaining.SelectedItem) = True Then
+            MsgBox("Please select years remaining")
+            Exit Sub
+        End If
         CustomDialog.ShowForm("You are going For a " + degreePlan + " degree In " + degreeList.SelectedItem.ToString + " And you have " + yearsRemaining.SelectedItem.ToString + " remaining, keep up the good work!")
     End Sub
 
