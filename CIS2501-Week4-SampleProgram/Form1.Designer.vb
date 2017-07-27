@@ -22,10 +22,10 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.degreeBox1 = New System.Windows.Forms.CheckBox()
+        Me.degreeBox2 = New System.Windows.Forms.CheckBox()
+        Me.degreeBox4 = New System.Windows.Forms.CheckBox()
+        Me.degreeBox3 = New System.Windows.Forms.CheckBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,45 +34,45 @@ Partial Class Form1
         Me.exitButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'CheckBox1
+        'degreeBox1
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(12, 45)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(77, 17)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Associates"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.degreeBox1.AutoSize = True
+        Me.degreeBox1.Location = New System.Drawing.Point(12, 45)
+        Me.degreeBox1.Name = "degreeBox1"
+        Me.degreeBox1.Size = New System.Drawing.Size(77, 17)
+        Me.degreeBox1.TabIndex = 0
+        Me.degreeBox1.Text = "Associates"
+        Me.degreeBox1.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'degreeBox2
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(12, 68)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(73, 17)
-        Me.CheckBox5.TabIndex = 4
-        Me.CheckBox5.Text = "Bachelors"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.degreeBox2.AutoSize = True
+        Me.degreeBox2.Location = New System.Drawing.Point(12, 68)
+        Me.degreeBox2.Name = "degreeBox2"
+        Me.degreeBox2.Size = New System.Drawing.Size(73, 17)
+        Me.degreeBox2.TabIndex = 4
+        Me.degreeBox2.Text = "Bachelors"
+        Me.degreeBox2.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'degreeBox4
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(12, 114)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(50, 17)
-        Me.CheckBox2.TabIndex = 6
-        Me.CheckBox2.Text = "Ph.D"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.degreeBox4.AutoSize = True
+        Me.degreeBox4.Location = New System.Drawing.Point(12, 114)
+        Me.degreeBox4.Name = "degreeBox4"
+        Me.degreeBox4.Size = New System.Drawing.Size(50, 17)
+        Me.degreeBox4.TabIndex = 6
+        Me.degreeBox4.Text = "Ph.D"
+        Me.degreeBox4.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'degreeBox3
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(12, 91)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(63, 17)
-        Me.CheckBox3.TabIndex = 5
-        Me.CheckBox3.Text = "Masters"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.degreeBox3.AutoSize = True
+        Me.degreeBox3.Location = New System.Drawing.Point(12, 91)
+        Me.degreeBox3.Name = "degreeBox3"
+        Me.degreeBox3.Size = New System.Drawing.Size(63, 17)
+        Me.degreeBox3.TabIndex = 5
+        Me.degreeBox3.Text = "Masters"
+        Me.degreeBox3.UseVisualStyleBackColor = True
         '
         'ListBox1
         '
@@ -139,10 +139,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.degreeBox4)
+        Me.Controls.Add(Me.degreeBox3)
+        Me.Controls.Add(Me.degreeBox2)
+        Me.Controls.Add(Me.degreeBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -150,10 +150,10 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents degreeBox1 As CheckBox
+    Friend WithEvents degreeBox2 As CheckBox
+    Friend WithEvents degreeBox4 As CheckBox
+    Friend WithEvents degreeBox3 As CheckBox
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label1 As Label
