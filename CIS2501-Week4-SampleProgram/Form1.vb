@@ -4,6 +4,17 @@
     End Sub
 
     Private Sub startButton_Click(sender As Object, e As EventArgs) Handles startButton.Click
+        Dim degreePlan As String
+        If degreeBox1.Checked Then
+            degreePlan = "Associates"
+        ElseIf degreeBox2.Checked Then
+            degreePlan = "Bachelors"
+        ElseIf degreeBox3.Checked Then
+            degreePlan = "Masters"
+        ElseIf degreeBox4.Checked Then
+            degreePlan = "Ph.D"
+        End If
+
 
     End Sub
 

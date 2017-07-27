@@ -23,7 +23,7 @@ Partial Class msgBox
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Output = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -35,22 +35,22 @@ Partial Class msgBox
         Me.Button1.Text = "Okay"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
+        'Output
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(208, 37)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Label1"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Output.AutoSize = True
+        Me.Output.Location = New System.Drawing.Point(208, 37)
+        Me.Output.Name = "Output"
+        Me.Output.Size = New System.Drawing.Size(39, 13)
+        Me.Output.TabIndex = 1
+        Me.Output.Text = "Label1"
+        Me.Output.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'msgBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(475, 132)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Output)
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "msgBox"
@@ -61,5 +61,5 @@ Partial Class msgBox
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Output As Label
 End Class
